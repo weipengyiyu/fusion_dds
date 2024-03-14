@@ -1,0 +1,5 @@
+struct DDSData_Msg {
+    string topic;
+    double timestamp;
+    sequence<octet> payload;
+};

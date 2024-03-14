@@ -1,0 +1,22 @@
+
+module lidar_msgs {
+    module msg {
+        struct PointXYZIRT {
+            int16 x;
+            int16 y;
+            int8 z;
+            uint8 intensity;
+        };
+
+        struct _PointCloud2 {
+            uint32 height;
+            uint32 width;
+            boolean is_dense;
+            double timestamp;
+            uint32 seq;
+            string frame_id;
+
+            sequence<PointXYZIRT> points;
+        };
+    };
+};
